@@ -18,3 +18,15 @@ Then run the script via:
 ```
 ./slackMessageBot.py
 ```
+
+#### Scheduling the Slack Message Bot using `crontab`
+
+Open the servers crontab via:
+```
+crontab -e
+```
+
+Add the following to schedule the Slack Message Bot to send automated messages everyday at midnight:
+```
+0 0 * * * ./slackMessageBot.py
+```
