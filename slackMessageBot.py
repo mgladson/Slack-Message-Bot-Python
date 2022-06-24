@@ -19,7 +19,6 @@ def populate_title_and_message(title,message):
     return (title_and_message_dict)
 
 def slack_send_channel_automated_message(titleMessageDict):
-    #alerts-link-eth-rinkeby
     url = "https://hooks.slack.com/services/YOUR_SLACK_ALERT_CHANNEL_WEBHOOK"
 
     slack_data = {
